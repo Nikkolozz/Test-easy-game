@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+.header {
+    user-select: none;
+    padding: 20px 20%;
+    background: rgb(65, 17, 242);
+    background: linear-gradient(213deg, rgba(65, 17, 242, 0.8407738095238095) 20%, rgba(0, 0, 0, 0.8827906162464986) 86%);
+    height: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header .texts {
+    display: flex;
+    gap: 30px;
+}
+
+.texts a {
+    transition: 0.2s;
+}
+
+.texts a:hover {
+    transform: translateY(-5px);
+    text-shadow:
+        5px 5px 7px black,
+        5px 5px 10px black,
+        0 0 21px black,
+        0 0 42px rgb(65, 17, 242),
+        0 0 82px rgb(65, 17, 242),
+        0 0 92px rgb(65, 17, 242),
+        0 0 102px rgb(65, 17, 242),
+        0 0 151px rgb(65, 17, 242);
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo a {
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: rgb(235, 233, 233);
+}
+
+.body-container {
+    user-select: none;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20%;
+}
+
+.body-container .game {
+    position: relative;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    /* background: rgb(65, 17, 242);
+    background: radial-gradient(circle, rgba(65, 17, 242, 0.8827906162464986) 21%, rgba(0, 0, 0, 1) 53%); */
+    color: white;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem #fff,
+        0 0 .1rem #fff,
+        0 0 1rem rgb(65, 17, 242),
+        0 0 0.5rem rgb(65, 17, 242),
+        0 0 1.8rem rgb(65, 17, 242),
+        inset 0 0 0.5rem.0rem rgb(65, 17, 242);
+}
+
+.game h1 {
+    font-family: 'VT323', monospace;
+    position: absolute;
+    font-size: 30px;
+    top: 3%;
+    right: 4%;
+    color: rgb(14, 13, 13);
+}
+
+.game button {
+    padding: 10px 20px;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    --c: #fff;
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p, 100%)/300% no-repeat,
+        rgb(75, 32, 231);
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i, -1)));
+    text-shadow: calc(var(--_i, -1)* 0.08em) -.01em 0 var(--c),
+        calc(var(--_i, -1)*-0.08em) .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+    cursor: pointer;
+    padding: .1em .3em;
+    margin-top: 50px;
+}
+
+button:hover,
+button:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+}
+
+button:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+}
+
+
+#Objects {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(14, 13, 13);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#Timer {
+    margin-top: 32px;
+}
